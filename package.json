@@ -1,0 +1,18 @@
+{
+  "name": "constructora-aurea-suite",
+  "private": true,
+  "version": "3.0.0",
+  "workspaces": [
+    "frontend",
+    "admin"
+  ],
+  "scripts": {
+    "dev": "concurrently -n FRONTEND,ADMIN -c cyan,magenta \"npm run dev --workspace frontend\" \"npm run dev --workspace admin\"",
+    "build": "npm run build --workspace frontend && npm run build --workspace admin",
+    "frontend": "npm run dev --workspace frontend",
+    "admin": "npm run dev --workspace admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

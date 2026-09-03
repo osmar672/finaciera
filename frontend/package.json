@@ -1,0 +1,21 @@
+{
+  "name": "constructora-moderna",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest",
+    "motion": "latest",
+    "lenis": "latest"
+  },
+  "devDependencies": {}
+}
